@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "github-security-advisory-tracker",
+    "title": "GitHub Security Advisory Tracker — New GHSA Advisories",
+    "description": "Track new GitHub Security Advisories (GHSA) by package ecosystem, package name, or severity. Get affected version ranges, patched versions, CVSS score, and CWE for open-source dependency vulnerabilities.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile"
+}

@@ -1,0 +1,49 @@
+{
+    "title": "GitHub Security Advisory Tracker Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "ecosystem": {
+            "title": "Package ecosystem",
+            "type": "string",
+            "editor": "select",
+            "description": "Limit to advisories affecting packages in this ecosystem.",
+            "enum": ["all", "npm", "pip", "maven", "nuget", "composer", "rubygems", "go", "rust", "actions", "pub", "swift", "erlang"],
+            "enumTitles": ["All ecosystems", "npm (JavaScript)", "pip (Python)", "Maven (Java)", "NuGet (.NET)", "Composer (PHP)", "RubyGems (Ruby)", "Go", "Rust (crates.io)", "GitHub Actions", "pub (Dart)", "Swift", "Erlang"],
+            "default": "all"
+        },
+        "packageName": {
+            "title": "Package name",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Limit to advisories affecting this specific package, e.g. \"lodash\", \"django\". Leave blank for all packages in the selected ecosystem."
+        },
+        "severity": {
+            "title": "Severity",
+            "type": "string",
+            "editor": "select",
+            "description": "Only return advisories at exactly this severity level (GitHub's API matches severity exactly, not as a threshold).",
+            "enum": ["all", "low", "medium", "high", "critical"],
+            "enumTitles": ["All severities", "Low", "Medium", "High", "Critical"],
+            "default": "all"
+        },
+        "daysBack": {
+            "title": "Days back",
+            "type": "integer",
+            "editor": "number",
+            "description": "How many days back from today to search, by publish date.",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 365
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of advisories to return, most recently published first.",
+            "default": 25,
+            "minimum": 1,
+            "maximum": 100
+        }
+    }
+}

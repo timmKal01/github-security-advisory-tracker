@@ -1,0 +1,11 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of GitHub Security Advisory Tracker",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Advisories",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}
