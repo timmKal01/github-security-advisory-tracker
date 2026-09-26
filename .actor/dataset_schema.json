@@ -1,0 +1,63 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "ghsaId",
+                    "cveId",
+                    "summary",
+                    "severity",
+                    "cvssScore",
+                    "cweIds",
+                    "publishedAt",
+                    "updatedAt",
+                    "htmlUrl"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "ghsaId": {
+                        "label": "GHSA ID",
+                        "format": "text"
+                    },
+                    "cveId": {
+                        "label": "CVE ID",
+                        "format": "text"
+                    },
+                    "summary": {
+                        "label": "Summary",
+                        "format": "text"
+                    },
+                    "severity": {
+                        "label": "Severity",
+                        "format": "text"
+                    },
+                    "cvssScore": {
+                        "label": "CVSS score",
+                        "format": "number"
+                    },
+                    "cweIds": {
+                        "label": "Cwe IDs",
+                        "format": "array"
+                    },
+                    "publishedAt": {
+                        "label": "Published at",
+                        "format": "date"
+                    },
+                    "updatedAt": {
+                        "label": "Updated at",
+                        "format": "date"
+                    },
+                    "htmlUrl": {
+                        "label": "HTML URL",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}
