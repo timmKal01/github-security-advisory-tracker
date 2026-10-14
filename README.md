@@ -77,5 +77,5 @@ the search returns 0 advisories or 100.
 
 ## Related products
 
-- [NPM Package Update Tracker](https://github.com/timmKal01/npm-package-tracker) — new versions/deprecations for a package you depend on
-- [Vulnerability Alert](https://github.com/timmKal01/vulnerability-alert) — the broader NVD/CVE database, not scoped to a package ecosystem
+- [npm Package Update Tracker](https://apify.com/m_ctim/npm-package-tracker): new versions/deprecations for a package you depend on
+- [CVE Tracker](https://apify.com/m_ctim/vulnerability-alert): the broader NVD/CVE database, not scoped to a package ecosystem
